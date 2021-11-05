@@ -6,7 +6,6 @@ function ejecutador () {
     let urlApi = 'https://rickandmortyapi.com/api/character'
     /* console.log(urlApi) */
     let api = fetch(urlApi,  { method: 'GET',
-    headers: misCabeceras,
     mode: 'cors', // <---
     cache: 'default'
  })
