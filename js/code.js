@@ -5,10 +5,7 @@ let cards = document.getElementById('tarjetas')
 function ejecutador () {
     let urlApi = 'https://rickandmortyapi.com/api/character'
     /* console.log(urlApi) */
-    let api = fetch(urlApi,  { method: 'GET',
-    mode: 'cors', // <---
-    cache: 'default'
- })
+    let api = fetch(urlApi)
 api.then(so => so.json())
     .then(data_cards => {
 
